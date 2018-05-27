@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Journey HTML CSS Template</title>
+    <title>Cheap Premium Travel &</title>
 <!-- 
 Journey Template 
 http://www.templatemo.com/tm-511-journey
@@ -41,8 +41,7 @@ http://www.templatemo.com/tm-511-journey
                     <div class="row">
                         <nav class="navbar navbar-expand-lg narbar-light">
                             <a class="navbar-brand mr-auto" href="#">
-                                <img src="img/logo.png" alt="Site logo">
-                                Journey
+                                <img id="logoOnly" src="img/tourfrombali-logo.png" alt="Site logo"><img id="logoName" src="img/tourfrombali-name.png" alt="Site logo" style="width: 140px">
                             </a>
                             <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
@@ -76,29 +75,28 @@ http://www.templatemo.com/tm-511-journey
                 <div class="tm-container-outer tm-banner-bg">
                     <div class="container">
 
-                        <div class="row tm-banner-row tm-banner-row-header">
-                            <div class="col-xs-12">
-                                <div class="tm-banner-header">
-                                    <h1 class="text-uppercase tm-banner-title">tour from bali</h1>
-                                    <img src="img/dots-3.png" alt="Dots">
-                                    <p class="tm-banner-subtitle">Best Price and Premium Travel Service</p>
-                                </div>    
-                            </div>  <!-- col-xs-12 -->                      
+                        <div class="row tm-banner-row tm-banner-row-header">            
                         </div> <!-- row -->
                         <div class="row tm-banner-row" id="tm-section-search">
-
                             <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
                                 <!-- form-row -->
-								<div class="form-row tm-search-form-row">    
-									<label for="inputCity">Choose Your Destination</label>
-                                    <select name="destination" type="text" class="form-control select2" id="inputCity">
-										<option value disabled selected></option>
-										<option>Tanah Lot Beach</option>
-										<option>Kuta Beach</option>
-										<option>Sanur Beach</option>
-									</select>
-									<label for="btnSubmit">&nbsp;</label>
-                                    <button type="submit" class="btn btn-primary tm-btn tm-btn-search text-uppercase" id="btnSubmit">Check Availability</button>
+								<div class="form-row tm-search-form-row">
+                                    <table>
+                                        <td style="width: 90%">
+                                            <label for="inputCity">Choose Your Destination</label>
+                                            <select name="destination" type="text" class="form-control select2" id="inputCity">
+                                                <option value disabled selected></option>
+                                                <option>Tanah Lot Beach</option>
+                                                <option>Kuta Beach</option>
+                                                <option>Sanur Beach</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <label for="btnSubmit">&nbsp;</label>
+                                            <button type="submit" class="btn btn-primary tm-btn tm-btn-search text-uppercase" id="btnSubmit">Check Availability</button>
+                                        </td>
+                                    </table>    
+									
                                 </div>
                             </form>                             
 
@@ -123,6 +121,10 @@ http://www.templatemo.com/tm-511-journey
             -->
 			
             <div class="tm-container-outer" id="tm-section-2">
+                <div class="titleHeader">
+                    <h6 class="spacing">DISCOVER LOCAL EVENT</h6>
+                    <h2><strong>Upcoming/Ongoing Event</strong></h2>
+                </div>
                 <section class="tm-slideshow-section">
                     <div class="tm-slideshow">
                         <img src="img/waisak-2.jpg" alt="Image">
@@ -188,6 +190,10 @@ http://www.templatemo.com/tm-511-journey
                 </section>
             </div>        
             <div class="tm-container-outer" id="tm-section-3">
+                <div class="titleHeader">
+                    <h6 class="spacing">DISCOVER OUR BEST SERVICES</h6>
+                    <h2><strong>Top Tour & Activity</strong></h2>
+                </div>
                 <ul class="nav nav-pills tm-tabs-links">
                     <li class="tm-tab-link-li">
                         <a href="#1a" data-toggle="tab" class="tm-tab-link">
@@ -662,8 +668,10 @@ http://www.templatemo.com/tm-511-journey
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12 mx-auto tm-about-text-wrap text-center">                        
-								<h2 class="text-uppercase mb-4">“It is <strong>love</strong> that makes impossible <strong>possible.</strong>” <br /> —Indian Proverb</h2>
-								<p class="mb-4">Marriage is a lifelong love affair, it is the dream of every girl to have the perfect, romantic wedding that she’s been dreaming of since she’s a little kid, and the most significant life event of every man that he’ll never forget. Although the trend of getting elope and “get married in the city hall” has been coming in strong for a while, but for the couples that are more traditional, the wedding is still a very important event that represents two people’s commitment and love to one and another.</p>
+								<div class="titleHeader">
+                                    <h6 class="spacing">LET THE ROMANCE FLOW</h6>
+                                    <h2><strong>Wedding Event</strong></h2>
+                                </div>
 							</div>
 						</div>
 						<div class="row">
@@ -708,7 +716,11 @@ http://www.templatemo.com/tm-511-journey
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12 mx-auto tm-about-text-wrap text-center">                        
-								<h2 class="text-uppercase mb-4 font-white"><strong>Create</strong> your <strong>own</strong> event</h2>
+								<h2 class="text-uppercase mb-4 font-white">
+                                <div class="titleHeader">
+                                    <h6 class="spacing">MAKE YOUR OWN TOUR</h6>
+                                    <h2><strong>Custom Tour</strong></h2>
+                                </div>
 								<p class="custom-event font-white">Do you plan a vacation with your family, friends or maybe your co-workers? Or maybe there is no tour package offer suits to you? Dont worry, you can create your own event in Tour From Bali. Choose your own destination, accomodation and anything on your own. Still in doubt? Click this button below to estimate your vacation.</p>
 								<a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Custom Tour</a>
 							</div>
@@ -779,13 +791,17 @@ http://www.templatemo.com/tm-511-journey
         /* DOM is ready
         ------------------------------------------------*/
         $(function(){
-
+            $("#logoOnly").hide();
             // Change top navbar on scroll
             $(window).on("scroll", function() {
                 if($(window).scrollTop() > 100) {
                     $(".tm-top-bar").addClass("active");
+                    $("#logoName").hide();
+                    $("#logoOnly").show();
                 } else {                    
                  $(".tm-top-bar").removeClass("active");
+                 $("#logoName").show();
+                 $("#logoOnly").hide();
                 }
             });
 
