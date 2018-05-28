@@ -704,6 +704,7 @@ p.custom-event {
 
 .titleHeader{
     padding: 40px 20px 40px 60px;
+	word-wrap: break-word;
 }
 
 .spacing{
@@ -744,4 +745,23 @@ p.custom-event {
     border-style: none;
     background-color: white;
     cursor: pointer;
+}
+.bgc-white {
+	background:rgba(255,255,255, 0.9);
+}
+.search-destination {
+	padding-top: 12rem;
+	z-index: 1;
+    position: absolute;
+	top: 30%;
+    left: 50%;
+	min-width: 50%;
+	max-width: 100%;
+    transform: translate(-50%, -50%);
+}
+.search-form {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
 }

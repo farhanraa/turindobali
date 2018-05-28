@@ -41,7 +41,8 @@ http://www.templatemo.com/tm-511-journey
                     <div class="row">
                         <nav class="navbar navbar-expand-lg narbar-light">
                             <a class="navbar-brand mr-auto" href="#">
-                                <img id="logoOnly" src="img/tourfrombali-logo.png" alt="Site logo"><img id="logoName" src="img/tourfrombali-name.png" alt="Site logo" style="width: 140px">
+                                <img id="logoOnly" src="img/tourfrombali-logo.png" alt="Site logo">
+								<img id="logoName" src="img/tourfrombali-name.png" alt="Site logo">
                             </a>
                             <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
@@ -74,34 +75,29 @@ http://www.templatemo.com/tm-511-journey
             <section class="tm-banner">
                 <div class="tm-container-outer tm-banner-bg">
                     <div class="container">
-
-                        <div class="row tm-banner-row tm-banner-row-header">            
-                        </div> <!-- row -->
-                        <div class="row tm-banner-row" id="tm-section-search">
-                            <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
-                                <!-- form-row -->
-								<div class="form-row tm-search-form-row">
-                                    <table>
-                                        <td style="width: 90%">
-                                            <label for="inputCity">Choose Your Destination</label>
-                                            <select name="destination" type="text" class="form-control select2" id="inputCity">
-                                                <option value disabled selected></option>
-                                                <option>Tanah Lot Beach</option>
-                                                <option>Kuta Beach</option>
-                                                <option>Sanur Beach</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <label for="btnSubmit">&nbsp;</label>
-                                            <button type="submit" class="btn btn-primary tm-btn tm-btn-search text-uppercase" id="btnSubmit">Check Availability</button>
-                                        </td>
-                                    </table>    
-									
-                                </div>
-                            </form>                             
-
-                        </div> <!-- row -->
                         <div class="tm-banner-overlay"></div>
+						<div class="search-destination">
+							<div class="bgc-white">
+								<div class="search-form">
+									<form class="col-12">
+									  <div class="form-group">
+										<label for="inputCity">Choose Your Destination</label>
+												<select name="destination" type="text" class="form-control select2" id="inputCity">
+													<option value disabled selected></option>
+													<option>Tanah Lot Beach</option>
+													<option>Kuta Beach</option>
+													<option>Sanur Beach</option>
+												</select>
+									  </div>
+									  <div class="row">
+										<div class="col-12 text-center">
+											<button type="submit" class="btn btn-primary tm-btn text-uppercase text-center" id="btnSubmit">Check Availability</button>
+										</div>
+									  </div>
+									</form>  
+								</div>
+							</div>
+						</div>
                     </div>  <!-- .container -->                   
                 </div>     <!-- .tm-container-outer -->                 
             </section>
@@ -121,10 +117,10 @@ http://www.templatemo.com/tm-511-journey
             -->
 			
             <div class="tm-container-outer" id="tm-section-2">
-                <div class="titleHeader">
-                    <h6 class="spacing">DISCOVER LOCAL EVENT</h6>
-                    <h2><strong>Upcoming/Ongoing Event</strong></h2>
-                </div>
+				<div class="titleHeader">
+						<h6 class="spacing">DISCOVER LOCAL EVENT</h6>
+						<h2><strong>Upcoming/Ongoing Event</strong></h2>
+					</div>				
                 <section class="tm-slideshow-section">
                     <div class="tm-slideshow">
                         <img src="img/waisak-2.jpg" alt="Image">
@@ -190,10 +186,12 @@ http://www.templatemo.com/tm-511-journey
                 </section>
             </div>        
             <div class="tm-container-outer" id="tm-section-3">
-                <div class="titleHeader">
-                    <h6 class="spacing">DISCOVER OUR BEST SERVICES</h6>
-                    <h2><strong>Top Tour & Activity</strong></h2>
-                </div>
+                <div>
+					<div class="titleHeader">
+						<h6 class="spacing">DISCOVER OUR BEST SERVICES</h6>
+						<h2><strong>Top Tour & Activity</strong></h2>
+					</div>
+				</div>
                 <ul class="nav nav-pills tm-tabs-links">
                     <li class="tm-tab-link-li">
                         <a href="#1a" data-toggle="tab" class="tm-tab-link">
@@ -830,8 +828,10 @@ http://www.templatemo.com/tm-511-journey
             });
 			
 			$('.select2').select2({
-				placeholder: 'Kuta Beach Looks Pretty',
-				theme: 'bootstrap'
+				placeholder: 'Kuta Beach Looks Pretty....',
+				theme: 'bootstrap',
+				dropdownAutoWidth : true,
+				width: 'auto'
 			})
 			
             //loadGoogleMap();                                       // Google Map                
