@@ -688,6 +688,12 @@ footer p { color: white; }
 	background-size:cover;
 }
 
+#detail-photo {
+    height: 350px; 
+    background: url(../img/ll-2.jpg) center top no-repeat;
+    background-size:cover;
+}
+
 .font-white {
 	color: white;
 }
@@ -707,4 +713,35 @@ p.custom-event {
 
 #landingPageLogo{
     width: 20%;
+}
+
+.long-text-fs {
+    font-size: 16px;
+}
+
+#booking-float{
+    margin-top: 40px;
+    padding: 40px;
+    border: 2px solid rgba(0, 0, 0, .5);
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05) 
+    border-style: groove;
+    border-color: #efefef;
+}
+
+.float-right{
+    width: 475px;
+    max-height: 617px;
+    position: fixed;
+    left: 48.001rem;
+    top: 10px;
+}
+
+.line {
+    border-bottom: 1px solid #DBDBDB !important;
+}
+
+.currIcon{
+    border-style: none;
+    background-color: white;
+    cursor: pointer;
 }
